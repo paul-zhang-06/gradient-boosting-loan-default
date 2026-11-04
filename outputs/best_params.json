@@ -1,0 +1,16 @@
+{
+  "params": {
+    "num_leaves": 17,
+    "max_depth": 5,
+    "min_child_samples": 81,
+    "colsample_bytree": 0.1097938491660616,
+    "subsample": 0.8831338288559379,
+    "reg_alpha": 0.006157517363094395,
+    "reg_lambda": 16.834032129745953,
+    "min_split_gain": 0.17072838073683277
+  },
+  "best_auc_subsample_3fold": 0.7825284281393285,
+  "default_auc_subsample_3fold": 0.7781747351782492,
+  "best_iter_mean": 297.6666666666667,
+  "n_trials": 30
+}

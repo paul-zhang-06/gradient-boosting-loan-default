@@ -1,0 +1,136 @@
+{
+  "cv_auc_set_C": {
+    "default": {
+      "mean": 0.7894771308477588,
+      "std": 0.002492061776630898
+    },
+    "tuned": {
+      "mean": 0.7928801452739547,
+      "std": 0.0017689819214921907
+    }
+  },
+  "tuned_beats_default_in_folds": 5,
+  "top20_importance_features_in_all_5_folds": 18,
+  "top20_importance_rank_corr_mean": 0.9612930173290943,
+  "holdout_auc": {
+    "default": [
+      0.7936153128498591,
+      0.787336863723663,
+      0.7997808159005572
+    ],
+    "tuned": [
+      0.7954899550310022,
+      0.7894350979157688,
+      0.8018650239318942
+    ]
+  },
+  "holdout_auc_diff_tuned_minus_default": [
+    0.0018746421811430825,
+    0.0002871201206566088,
+    0.0033639419300627413
+  ],
+  "gini_tuned": 0.5909799100620043,
+  "ks_tuned": 0.45088949613227003,
+  "holdout_auc_set_B": {
+    "lr": 0.7516805868466153,
+    "rf": 0.7521448113375752,
+    "lgbm": 0.7696709753302656,
+    "xgb": 0.7699270232103697,
+    "cat": 0.7708426387165143
+  },
+  "holdout_auc_diff_tuned_C_minus_lgbm_B": [
+    0.025818979700736544,
+    0.021939063023391575,
+    0.029907387279957735
+  ],
+  "holdout_auc_diff_tuned_C_minus_LR_B": [
+    0.043809368184386854,
+    0.03961233044271097,
+    0.0482569827912442
+  ],
+  "accuracy_of_predicting_everyone_repays": 0.9192722306228964,
+  "top_decile_default_rate": 0.31848479921963907,
+  "top_decile_capture": 0.3945619335347432,
+  "top_2_deciles_capture": 0.5854984894259819,
+  "calibration_raw": {
+    "brier": 0.06494183650578887,
+    "log_loss": 0.23347388259139004,
+    "mean_pred": 0.08018342374425183,
+    "base_rate": 0.08072776937710356,
+    "avg_precision": 0.3010724007095802
+  },
+  "calibration_isotonic": {
+    "brier": 0.0649496145541135,
+    "log_loss": 0.23353111796203285,
+    "mean_pred": 0.08067749766435381,
+    "base_rate": 0.08072776937710356,
+    "avg_precision": 0.29460395520810956
+  },
+  "importance_by_source_table": {
+    "POS_CASH_balance": 0.029087124340571667,
+    "credit_card_balance": 0.040576292568511224,
+    "installments_payments": 0.10089072260755386,
+    "bureau + bureau_balance": 0.1400735276016546,
+    "previous_application": 0.16679511423575324,
+    "application (raw)": 0.21918818498399845,
+    "application (engineered)": 0.30338903366195696
+  },
+  "n_features_used_gain_gt_0": 565,
+  "shap_top10": [
+    {
+      "feature": "EXT_MEAN",
+      "mean_abs_shap": 0.15355088613607168
+    },
+    {
+      "feature": "CODE_GENDER",
+      "mean_abs_shap": 0.10495371246352111
+    },
+    {
+      "feature": "BUREAU_DEBT_TO_CREDIT_MAX",
+      "mean_abs_shap": 0.09260329327145729
+    },
+    {
+      "feature": "ORGANIZATION_TYPE",
+      "mean_abs_shap": 0.09145747130106668
+    },
+    {
+      "feature": "CREDIT_TERM_MONTHS",
+      "mean_abs_shap": 0.09048329973221704
+    },
+    {
+      "feature": "AMT_ANNUITY",
+      "mean_abs_shap": 0.09038564845171687
+    },
+    {
+      "feature": "EXT_MAX",
+      "mean_abs_shap": 0.08689760655851526
+    },
+    {
+      "feature": "CREDIT_TO_GOODS",
+      "mean_abs_shap": 0.08546952954415589
+    },
+    {
+      "feature": "EXT_MIN",
+      "mean_abs_shap": 0.08510082836229775
+    },
+    {
+      "feature": "PREV_DAYS_LAST_DUE_1ST_VERSION_MAX",
+      "mean_abs_shap": 0.08223317566453121
+    }
+  ],
+  "gain_vs_shap_top10_overlap": 6,
+  "missed_defaulters_share_safest_half": 0.14259818731117824,
+  "false_alarm_share_of_top5pct": 0.60370611183355,
+  "holdout_auc_3_seeds": [
+    0.7959356729552302,
+    0.7947215566804839,
+    0.7959054390318704
+  ],
+  "submission": {
+    "rows": 48744,
+    "n_trees": 1491,
+    "mean_pred_test": 0.07265958543123244,
+    "mean_pred_holdout": 0.08018342374425183,
+    "train_default_rate": 0.08072881945686496
+  }
+}

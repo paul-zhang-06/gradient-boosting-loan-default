@@ -1,0 +1,72 @@
+{
+  "n_rows": 307511,
+  "n_cols": 122,
+  "default_rate": 0.08072881945686496,
+  "cols_with_missing": 67,
+  "cols_over_50pct_missing": 41,
+  "days_employed_sentinel_share": 0.18007160719453938,
+  "default_rate_sentinel": {
+    "False": 0.0865997453765215,
+    "True": 0.05399646043269404
+  },
+  "xna_gender": 4,
+  "org_xna_share": 0.18007160719453938,
+  "max_single_feature_auc": 0.7400745394831743,
+  "single_feature_top5": [
+    {
+      "feature": "EXT_WEIGHTED",
+      "strength": 0.7401
+    },
+    {
+      "feature": "EXT_MEAN",
+      "strength": 0.7165
+    },
+    {
+      "feature": "EXT_MIN",
+      "strength": 0.691
+    },
+    {
+      "feature": "EXT_MAX",
+      "strength": 0.6862
+    },
+    {
+      "feature": "EXT_SOURCE_3",
+      "strength": 0.6794
+    }
+  ],
+  "n_features_single_auc_gt_0.65": 8,
+  "auc_of_SK_ID_CURR": 0.49776313352677193,
+  "adversarial_auc_set_A": 0.8901109330285377,
+  "adversarial_auc_set_B": 0.9467018862506368,
+  "adversarial_top5_set_A": [
+    {
+      "Unnamed: 0": "AMT_CREDIT",
+      "gain_share": 0.184
+    },
+    {
+      "Unnamed: 0": "AMT_ANNUITY",
+      "gain_share": 0.125
+    },
+    {
+      "Unnamed: 0": "AMT_REQ_CREDIT_BUREAU_QRT",
+      "gain_share": 0.113
+    },
+    {
+      "Unnamed: 0": "AMT_REQ_CREDIT_BUREAU_MON",
+      "gain_share": 0.106
+    },
+    {
+      "Unnamed: 0": "AMT_GOODS_PRICE",
+      "gain_share": 0.102
+    }
+  ],
+  "cash_loan_share_train_vs_test": [
+    0.9047871458256778,
+    0.9909937633349746
+  ],
+  "amt_credit_mean_train_vs_test": [
+    599026.0,
+    516740.4375
+  ],
+  "shuffled_target_cv_auc": 0.4981554435237532
+}
